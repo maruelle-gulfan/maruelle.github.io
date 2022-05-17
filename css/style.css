@@ -1,0 +1,121 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* FONTS */
+.josefins {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.smooch {
+  font-family: "Smooch", cursive;
+}
+
+/* Header */
+header {
+  display: flex;
+  padding: 10px 0;
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 10;
+}
+.user {
+  width: 50%;
+}
+.user a {
+  display: flex;
+  width: 300px;
+  vertical-align: middle;
+  text-align: center;
+  align-items: center;
+  padding: 0 50px;
+  text-decoration: none;
+  color: #fff;
+}
+.user .logo {
+  width: 50px;
+  height: 50px;
+}
+
+.user .name {
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.navbar {
+  width: 50%;
+  display: flex;
+  width: 50%;
+  vertical-align: middle;
+  text-align: center;
+  align-items: center;
+}
+
+.navbar ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 900;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  height: 100vh;
+}
+
+.hero .text {
+  width: 38%;
+  font-weight: bold;
+  background: #1b242f;
+  color: #fff;
+}
+
+.hero .text h1 {
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
+  padding-top: 40%;
+}
+
+.hero .img {
+  width: 62%;
+  object-fit: cover;
+  position: relative;
+  background-image: url("../img/e.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero .img::before {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#1b242f),
+    to(transparent)
+  );
+  background: linear-gradient(90deg, #1b242f, transparent);
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 85%;
+}
+
+.hero .img img {
+  object-fit: cover;
+  height: inherit;
+}
