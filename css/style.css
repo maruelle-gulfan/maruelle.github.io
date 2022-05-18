@@ -2,6 +2,12 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* anchors */
+a {
+  text-decoration: none;
 }
 
 /* FONTS */
@@ -13,6 +19,18 @@
   font-family: "Smooch", cursive;
 }
 
+/* Comment */
+.comment {
+  color: #808080;
+  font-size: 14px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+/* Colors */
+.blue {
+  color: #00b8f5;
+}
 /* Header */
 header {
   display: flex;
@@ -44,6 +62,7 @@ header {
 .user .name {
   font-size: 18px;
   font-weight: 900;
+  padding-left: 10px;
 }
 
 .navbar {
@@ -67,12 +86,14 @@ header {
   color: #fff;
   font-family: "Josefin Sans", sans-serif;
   font-weight: 900;
+  font-size: 18px;
 }
 
 /* Hero Section */
 .hero {
   display: flex;
   height: 100vh;
+  text-align: center;
 }
 
 .hero .text {
@@ -86,7 +107,44 @@ header {
   color: #fff;
   font-size: 24px;
   text-align: center;
-  padding-top: 40%;
+  padding-top: 50%;
+}
+
+.hero .text h1 span {
+  font-size: 24px;
+}
+
+.hero .text .quote {
+  color: #808080;
+  font-size: 14px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.hero .text .resume {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 24px;
+}
+
+.hero .text .resume span {
+  font-size: 30px;
+}
+
+.hero .text .resume a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 30px;
+  background-color: #00b8f5;
+  border-radius: 25px;
+  display: inline-block;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.hero .text .resume i {
+  font-size: 18px;
 }
 
 .hero .img {
@@ -118,4 +176,81 @@ header {
 .hero .img img {
   object-fit: cover;
   height: inherit;
+}
+
+.about {
+  background-color: #0f242f;
+  height: 100vh;
+}
+
+.about .heading {
+  width: 100%;
+  text-align: center;
+}
+
+.about .heading p {
+  font-size: 48px;
+  color: #fff;
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+
+.about .container {
+  display: flex;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.about .inform {
+  padding-bottom: 30px;
+}
+
+.about .container .info,
+.about .container .picture {
+  width: 50%;
+}
+
+.about .container .info .social-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.about .container .info .social-wrapper a {
+  margin: 0 10px;
+}
+
+.about .container .info .social-wrapper a i {
+  font-size: 36px;
+  color: #00b8f5;
+}
+
+.about .container .picture img {
+  width: 500px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.about .container .info .introduction {
+  padding: 10px 0;
+  color: #fff;
+  font-size: 18px;
+  padding: 0 80px;
+}
+
+.about .container .info .introduction .myself:nth-child(2) {
+  padding-top: 40px;
+}
+
+.about .container .info .introduction span {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.about .container .info .introduction .myself {
+  padding: 5px 0;
+}
+
+.about .container .info .introduction .myself .myInfo {
+  font-weight: 900;
 }

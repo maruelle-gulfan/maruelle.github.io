@@ -1,0 +1,30 @@
+/* Typewriter */
+
+.typewriter {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 35px;
+  color: #fff;
+  font-weight: bold;
+  position: relative;
+  margin: 0;
+  text-align: center;
+  padding-top: 5px;
+}
+
+.typewriter span {
+  color: #00b8f5;
+  /* text-transform: uppercase; */
+  padding: 5px;
+  border-right: solid #00b8f5 5px;
+  animation: cursor 1s ease-in-out infinite;
+}
+
+/* Typewriter Cursor Keyframes */
+@keyframes cursor {
+  from {
+    border-color: #00b8f5;
+  }
+  to {
+    border-color: transparent;
+  }
+}
