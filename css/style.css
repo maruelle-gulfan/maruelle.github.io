@@ -89,8 +89,17 @@ header {
   font-size: 18px;
 }
 
+/* Heading */
+.heading p {
+  font-size: 48px;
+  color: #fff;
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+
 /* Hero Section */
 .hero {
+  position: relative;
   display: flex;
   height: 100vh;
   text-align: center;
@@ -188,13 +197,6 @@ header {
   text-align: center;
 }
 
-.about .heading p {
-  font-size: 48px;
-  color: #fff;
-  padding-top: 80px;
-  padding-bottom: 40px;
-}
-
 .about .container {
   display: flex;
   width: 70%;
@@ -253,4 +255,265 @@ header {
 
 .about .container .info .introduction .myself .myInfo {
   font-weight: 900;
+}
+
+.about .container .hobbies {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.about .container .hobbies p {
+  margin: 0 10px;
+  padding: 0 10px;
+}
+
+.about .container .hobbies i {
+  color: #00b8f5;
+  font-size: 30px;
+}
+
+.about .container .hobbies .basketball {
+  position: relative;
+}
+
+.about .container .hobbies .basketball::before {
+  position: absolute;
+  content: "Basketball";
+  font-family: "Josefins", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  color: #fff;
+  bottom: -20px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.about .container .hobbies .swimming {
+  position: relative;
+}
+
+.about .container .hobbies .swimming::before {
+  position: absolute;
+  content: "Swimming";
+  font-family: "Josefins", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  color: #fff;
+  bottom: -20px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.about .container .hobbies .travel {
+  position: relative;
+}
+
+.about .container .hobbies .travel::before {
+  position: absolute;
+  content: "Travel";
+  font-family: "Josefins", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  color: #fff;
+  bottom: -20px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.about .container .hobbies .code {
+  position: relative;
+}
+
+.about .container .hobbies .code::before {
+  position: absolute;
+  content: "Coding";
+  font-family: "Josefins", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  color: #fff;
+  bottom: -20px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.skills {
+  background-color: #030b0f;
+  height: 100vh;
+}
+
+.skills .heading {
+  text-align: center;
+}
+
+.skills .container {
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 50px;
+  height: 100%;
+}
+
+.skills .hex-container {
+  width: 50%;
+  height: auto;
+}
+
+.skills .hex-wrapper {
+  position: relative;
+  width: 100%;
+  height: 90%;
+  left: 15%;
+}
+
+.skills .hexagon {
+  z-index: 0;
+  width: 200px;
+  height: 220px;
+  position: absolute;
+  text-align: center;
+  background: #151515;
+  transition: transform 0.5s ease-out;
+  transform: rotate(0deg) translateX(0px);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.skills .hexagon i {
+  color: #00b8f5;
+  font-size: 100px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.project {
+  background-color: #0f242f;
+  height: 100vh;
+}
+.project .heading {
+  text-align: center;
+}
+
+.project .container {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.proj-container {
+  width: 25%;
+  height: 275px;
+  background-color: #000;
+  margin: 2%;
+  transform: scale(1);
+  position: relative;
+  display: inline-block;
+  transition: all 0.25s linear;
+}
+
+.proj-container a {
+  color: #000;
+}
+
+/* ///PROJ 1 */
+#proj1 .proj_bg {
+  width: 100%;
+  height: 100%;
+  background-color: #1b242f;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.25s linear;
+  -webkit-box-shadow: 5px 5px 5px #00b8f5;
+  -moz-box-shadow: 5px 5px 5px #00b8f5;
+  box-shadow: 5px 5px 5px #00b8f5;
+}
+
+#proj1 .proj_bg img {
+  width: 95%;
+  height: 95%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#proj1 .proj_title {
+  width: 300px;
+  height: 15%;
+  background-color: #012941;
+  z-index: 2;
+  position: absolute;
+  right: -15px;
+  top: 15px;
+  display: flex;
+  align-items: center;
+  transition: all 0.4s linear;
+  box-shadow: 5px 5px 5px;
+}
+#proj1 .proj_title p {
+  letter-spacing: 1.5px;
+  font-weight: 300;
+  padding-left: 20px;
+  font-size: 24px;
+  color: #fff;
+}
+#proj1 .proj_desc {
+  width: 250px;
+  height: 10%;
+  background-color: #00b8f5;
+  z-index: 2;
+  position: absolute;
+  right: -15px;
+  top: 55px;
+  display: flex;
+  align-items: center;
+  opacity: 1;
+  transition: all 0.25s linear;
+  box-shadow: -5px 5px 15px #2d2f3a;
+}
+#proj1 .proj_desc p {
+  color: #000;
+  letter-spacing: 1px;
+  font-weight: 300;
+  padding-left: 20px;
+  font-size: 14px;
+}
+#proj1 .proj_info {
+  position: absolute;
+  bottom: 5%;
+  left: -2.5%;
+  opacity: 0.8;
+  background-color: #00b8f5;
+  padding: 5%;
+  width: 40%;
+  height: 20%;
+  opacity: 0;
+  transition: all 0.35s linear 0.1s;
+  transform-origin: center center;
+  border-radius: 2px;
+  /* box-shadow: -5px 5px 15px #00b8f5; */
+}
+
+#proj1 .proj_info p {
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.25;
+  font-weight: 700;
+}
+#proj1:hover {
+  cursor: pointer;
+}
+#proj1:hover .proj_title {
+  top: -10px;
+  right: -20px;
+  height: 15%;
+  width: 300px;
+}
+#proj1:hover .proj_desc {
+  opacity: 0;
+}
+#proj1:hover .proj_info {
+  opacity: 0.8;
 }
