@@ -31,6 +31,12 @@ a {
 .blue {
   color: #00b8f5;
 }
+
+/* Change Background */
+.change-color {
+  background-color: #0f242f;
+}
+
 /* Header */
 header {
   display: flex;
@@ -39,7 +45,7 @@ header {
   position: fixed;
   top: 0;
   width: 100vw;
-  z-index: 10;
+  z-index: 99999;
 }
 .user {
   width: 50%;
@@ -351,6 +357,7 @@ header {
   margin: 0 auto;
   padding-bottom: 50px;
   height: 100%;
+  display: flex;
 }
 
 .skills .hex-container {
@@ -383,6 +390,160 @@ header {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
+}
+
+.skills .skill-details {
+  width: 50%;
+  position: relative;
+}
+
+.skills .html::after {
+  content: "";
+  position: absolute;
+  background: url(../img/html.png);
+  background-repeat: no-repeat;
+  opacity: 0.1;
+  width: 600px;
+  height: 500px;
+  left: 35%;
+  top: 0;
+}
+
+.skills .css::after {
+  content: "";
+  position: absolute;
+  background: url(../img/css.png);
+  background-repeat: no-repeat;
+  opacity: 0.1;
+  width: 600px;
+  height: 500px;
+  left: 35%;
+  top: 0;
+}
+
+.skills .react::after {
+  content: "";
+  position: absolute;
+  background: url(../img/react.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0.1;
+  width: 600px;
+  height: 500px;
+  left: 35%;
+  top: 0;
+}
+
+.skills .js::after {
+  content: "";
+  position: absolute;
+  background: url(../img/js.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0.1;
+  width: 600px;
+  height: 500px;
+  left: 35%;
+  top: 0;
+}
+
+.skills .node::after {
+  content: "";
+  position: absolute;
+  background: url(../img/node.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0.1;
+  width: 600px;
+  height: 500px;
+  left: 35%;
+  top: 0;
+}
+
+.skills .wp::after {
+  content: "";
+  position: absolute;
+  background: url(../img/wp.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0.1;
+  width: 600px;
+  height: 500px;
+  left: 35%;
+  top: 0;
+}
+
+.skills .sass::after {
+  content: "";
+  position: absolute;
+  background: url(../img/sass.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0.1;
+  width: 600px;
+  height: 500px;
+  left: 35%;
+  top: 0;
+}
+
+.skills .html,
+.skills .css,
+.skills .react,
+.skills .js,
+.skills .node,
+.skills .wp,
+.skills .sass {
+  opacity: 0;
+}
+
+.skill-active {
+  opacity: 1 !important;
+}
+
+.skills .skill-details .item-details {
+  position: absolute;
+  border-left: 3px solid #808080;
+  height: 550px;
+  padding-left: 50px;
+}
+
+.skills .skill-details .item-details .title {
+  color: #fff;
+  font-size: 100px;
+  font-weight: 900;
+  letter-spacing: 5px;
+  font-family: "Josefin", sans-serif;
+  padding-left: 50px;
+}
+.skills .skill-details .item-details .sub {
+  color: #00b8f5;
+  font-size: 24px;
+  font-weight: 900;
+  letter-spacing: 5px;
+  position: absolute;
+  top: 85px;
+}
+.skills .skill-details .item-details .desc {
+  color: #fff;
+  font-size: 18px;
+  letter-spacing: 5px;
+  padding: 50px 0;
+  text-align: justify;
+  min-height: 220px;
+}
+.skills .skill-details .item-details .exp {
+  color: #00b8f5;
+  font-size: 28px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  padding: 20px 0;
+}
+
+.skills .skill-details .item-details .exp span {
+  color: orangered;
+  font-size: 30px;
+  font-weight: 900;
+  letter-spacing: 5px;
 }
 
 .project {
