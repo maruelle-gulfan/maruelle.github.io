@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.js" integrity="sha512-CX7sDOp7UTAq+i1FYIlf9Uo27x4os+kGeoT7rgwvY+4dmjqV0IuE/Bl5hVsjnQPQiTOhAX1O2r2j5bjsFBvv/A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -27,6 +29,7 @@
     />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/animation.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
     <link rel="icon" href="img/Chino-04.png" sizes="32x32" />
     <title>Maruelle | Portfolio</title>
   </head>
@@ -39,13 +42,38 @@
         </a>
       </div>
 
+      <div id="close" class="hide">×</div>
+      <div id="hamburger-menu">
+        <div class="ham"></div>
+        <div class="ham"></div>
+      </div>
+      <div id="side-nav"> 
+        <ul>
+          <a href="#" class="active">
+            <li>Home</li>
+          </a>
+          <a href="#">
+            <li>A link</li>
+          </a>
+          <a href="#">
+            <li>Another link</li>
+          </a>
+          <a href="#">
+            <li>One more</li>
+          </a>
+          <a href="#">
+            <li>Last one</li>
+          </a>
+       </ul>
+      </div>
+
       <nav class="navbar">
         <ul>
-          <li><a href="#home">.me( )</a></li>
-          <li><a href="#about">.about( )</a></li>
-          <li><a href="#skills">.skill( )</a></li>
-          <li><a href="#portfolio">.project( )</a></li>
-          <li><a href="#contact">.contact( )</a></li>
+          <li><a class="nav-home" href="#home">.me( )</a></li>
+          <li><a class="nav-about" href="#about">.about( )</a></li>
+          <li><a class="nav-skill" href="#skills">.skill( )</a></li>
+          <li><a class="nav-project" href="#portfolio">.project( )</a></li>
+          <li><a class="nav-contact" href="#contact">.contact( )</a></li>
         </ul>
       </nav>
     </header>
@@ -263,7 +291,7 @@
             </p>
             <p class="exp">
               Experience:
-              <span>3 Months</span>
+              <span>5 Months</span>
             </p>
           </div>
 
@@ -291,7 +319,7 @@
             </p>
             <p class="exp">
               Experience:
-              <span>3 Months</span>
+              <span>5 Months</span>
             </p>
           </div>
 
@@ -332,114 +360,134 @@
         <p class="josefins">.project(<span class="blue">'Works'</span>)</p>
       </div>
       <div class="container">
-        <div class="proj-container" id="proj1">
-          <a href="https://reunirgracias.iot-mansion.jp/" target="_blank">
-            <div class="proj_bg">
-              <img src="img/img1.PNG" alt="Project #1" />
+        <div class="card">
+            <div class="content">
+                <h2>01</h2>
+                <h3>Reunirgracias</h3>
+                <p class="desc">Reunirgracias is a japanese website that I made around 2019. This website is all about house property e-commerce.
+                </p>
+                <p class="made">MADE WITH : 
+                  <i class="fa-brands fa-html5"></i>
+                  <i class="fa-brands fa-js"></i>
+                  <i class="fa-brands fa-css3-alt"></i>
+                </p>
+                <a href="https://reunirgracias.iot-mansion.jp/" target="_blank">VISIT SITE</a>
             </div>
-            <div class="proj_title">
-              <p>.title(<span class="blue">'Reunirgracias'</span>)</p>
+        </div>
+        <div class="card">
+            <div class="content">
+                <h2>02</h2>
+                <h3>Suma-biz</h3>
+                <p class="desc">Suma-biz is a japanese website that I finished around 2020. This website is all about cellular network provider.
+                </p>
+                <p class="made">MADE WITH : 
+                  <i class="fa-brands fa-html5"></i>
+                  <i class="fa-brands fa-js"></i>
+                  <i class="fa-brands fa-css3-alt"></i>
+                </p>
+                <a href="http://www.suma-biz.com/" target="_blank">VISIT SITE</a>
             </div>
-            <div class="proj_desc">
-              <p>HTML | CSS | Javascript</p>
+        </div>
+        <div class="card">
+            <div class="content">
+                <h2>03</h2>
+                <h3>NA CORP</h3>
+                <p class="desc">NA 'enue' Corp is a japanese website I finished around 2021. This website is about a construction firm website that provides the best services.
+                </p>
+                <p class="made">MADE WITH : 
+                  <i class="fa-brands fa-html5"></i>
+                  <i class="fa-brands fa-js"></i>
+                  <i class="fa-brands fa-css3-alt"></i>
+                </p>
+                <a href="https://naproject.net/" target="_blank">VISIT SITE</a>
             </div>
-            <div class="proj_info">
-              <p>View Project</p>
-            </div>
-          </a>
         </div>
 
-        <div class="proj-container" id="proj1">
-          <a href="http://www.suma-biz.com/" target="_blank">
-            <div class="proj_bg">
-              <img src="img/img2.PNG" alt="Project #1" />
-            </div>
-            <div class="proj_title">
-              <p>.title(<span class="blue">'Suma-biz'</span>)</p>
-            </div>
-            <div class="proj_desc">
-              <p>HTML | CSS | Javascript</p>
-            </div>
-            <div class="proj_info">
-              <p>View Project</p>
-            </div>
-          </a>
-        </div>
-
-        <div class="proj-container" id="proj1">
-          <a href="https://naproject.net/" target="_blank">
-            <div class="proj_bg">
-              <img src="img/img3.PNG" alt="Project #1" />
-            </div>
-            <div class="proj_title">
-              <p>.title(<span class="blue">'NA-Project'</span>)</p>
-            </div>
-            <div class="proj_desc">
-              <p>WordPress</p>
-            </div>
-            <div class="proj_info">
-              <p>View Project</p>
-            </div>
-          </a>
-        </div>
-
-        <div class="proj-container" id="proj1">
-          <a
-            href="http://mystique-group.co.jp/?gclid=CjwKCAiA17P9BRB2EiwAMvwNyIfFT5ZnqlrahI-Kto8BWLge0MR-Or5KlMyyrAExtu8VBgOK1H6AuxoCgLMQAvD_BwE/"
-            target="_blank"
-          >
-            <div class="proj_bg">
-              <img src="img/img4.PNG" alt="Project #1" />
-            </div>
-            <div class="proj_title">
-              <p>.title(<span class="blue">'Mystique'</span>)</p>
-            </div>
-            <div class="proj_desc">
-              <p>HTML | CSS | Javascript</p>
-            </div>
-            <div class="proj_info">
-              <p>View Project</p>
-            </div>
-          </a>
-        </div>
-
-        <div class="proj-container" id="proj1">
-          <a href="https://www.morita-auto.co.jp/" target="_blank">
-            <div class="proj_bg">
-              <img src="img/img5.PNG" alt="Project #1" />
-            </div>
-            <div class="proj_title">
-              <p>.title(<span class="blue">'Morita-Auto'</span>)</p>
-            </div>
-            <div class="proj_desc">
-              <p>HTML | CSS | Javascript</p>
-            </div>
-            <div class="proj_info">
-              <p>View Project</p>
-            </div>
-          </a>
-        </div>
-
-        <div class="proj-container" id="proj1">
-          <a href="https://www.e-horita.co.jp/" target="_blank">
-            <div class="proj_bg">
-              <img src="img/img6.PNG" alt="Project #1" />
-            </div>
-            <div class="proj_title">
-              <p>.title(<span class="blue">'Horita'</span>)</p>
-            </div>
-            <div class="proj_desc">
-              <p>HTML | CSS | Javascript</p>
-            </div>
-            <div class="proj_info">
-              <p>View Project</p>
-            </div>
-          </a>
-        </div>
+        <div class="card">
+          <div class="content">
+              <h2>04</h2>
+              <h3>MYSTIQUE</h3>
+              <p class="desc">
+                Mystique is a japanese website I finished working on around 2020. It is an online e-commerce website to promote their physical store in japan.
+              </p>
+              <p class="made">MADE WITH : 
+                <i class="fa-brands fa-html5"></i>
+                <i class="fa-brands fa-js"></i>
+                <i class="fa-brands fa-css3-alt"></i>
+              </p>
+              <a href="http://mystique-group.co.jp/?gclid=CjwKCAiA17P9BRB2EiwAMvwNyIfFT5ZnqlrahI-Kto8BWLge0MR-Or5KlMyyrAExtu8VBgOK1H6AuxoCgLMQAvD_BwE/"
+              target="_blank">VISIT SITE</a>
+          </div>
       </div>
+    </div>
+
+
+    <div class="container two">
+      <div class="card">
+          <div class="content">
+              <h2>01</h2>
+              <h3>Morita-Auto</h3>
+              <p class="desc">Morita-Auto is a japanese website that I made around 2019. This website is all about a car workshop firm.
+              </p>
+              <p class="made">MADE WITH : 
+                <i class="fa-brands fa-html5"></i>
+                <i class="fa-brands fa-js"></i>
+                <i class="fa-brands fa-css3-alt"></i>
+              </p>
+              <a href="https://www.morita-auto.co.jp/" target="_blank">VISIT SITE</a>
+          </div>
+      </div>
+      <div class="card">
+          <div class="content">
+              <h2>02</h2>
+              <h3>Horita</h3>
+              <p class="desc">Horita is a japanese website I finished around 2020. This website is about a fruits shop which provides fresh fruits.
+              </p>
+              <p class="made">MADE WITH : 
+                <i class="fa-brands fa-html5"></i>
+                <i class="fa-brands fa-js"></i>
+                <i class="fa-brands fa-css3-alt"></i>
+              </p>
+              <a href="http://www.suma-biz.com/" target="_blank">VISIT SITE</a>
+          </div>
+      </div>
+      <div class="card">
+          <div class="content">
+              <h2>03</h2>
+              <h3>Horita</h3>
+              <p class="desc">Horita is a japanese website I finished around 2020. This website is about a fruits shop which provides fresh fruits.
+              </p>
+              <p class="made">MADE WITH : 
+                <i class="fa-brands fa-html5"></i>
+                <i class="fa-brands fa-js"></i>
+                <i class="fa-brands fa-css3-alt"></i>
+              </p>
+              <a href="https://www.e-horita.co.jp/" target="_blank">VISIT SITE</a>
+          </div>
+      </div>
+
+      <div class="card">
+        <div class="content">
+            <h2>04</h2>
+            <h3>MYSTIQUE</h3>
+            <p class="desc">
+              Mystique is a japanese website I finished working on around 2020. It is an online e-commerce website to promote their physical store in japan.
+            </p>
+            <p class="made">MADE WITH : 
+              <i class="fa-brands fa-html5"></i>
+              <i class="fa-brands fa-js"></i>
+              <i class="fa-brands fa-css3-alt"></i>
+            </p>
+            <a href="http://mystique-group.co.jp/?gclid=CjwKCAiA17P9BRB2EiwAMvwNyIfFT5ZnqlrahI-Kto8BWLge0MR-Or5KlMyyrAExtu8VBgOK1H6AuxoCgLMQAvD_BwE/"
+            target="_blank">VISIT SITE</a>
+        </div>
+    </div>
+  </div>
     </section>
 
     <script src="./js/all.js"></script>
     <script src="./js/animation.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    
   </body>
 </html>

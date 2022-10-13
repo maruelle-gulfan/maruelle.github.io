@@ -181,3 +181,13 @@
   grid-row-start: 3;
   grid-column: 6 / span 2;
 } */
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
